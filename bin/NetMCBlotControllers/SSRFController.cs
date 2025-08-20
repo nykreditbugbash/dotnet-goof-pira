@@ -16,9 +16,18 @@ namespace NETMVCBlot.Controllers
             string s = String.Empty;
             using (WebClient wc = new WebClient())
             {
-                // CTSECISSUE: Server Side Request Forgery (SSRF)
-                s = wc.DownloadString(input);
-                ViewBag.StringDownloaded = s;
+                // Validate input to prevent SSRF
+                if (Uri.TryCreate(input, UriKind.Absolute, out Uri uriResult)
+                    && (uriResult.Scheme == Uri.UriSchemeHttps || uriResult.Scheme == Uri.UriSchemeHttp)
+                    && uriResult.Host.EndsWith("target.com", StringComparison.OrdinalIgnoreCase))
+                {
+                    s = wc.DownloadString(uriResult);
+                    ViewBag.StringDownloaded = s;
+                }
+                else
+                {
+                    ViewBag.StringDownloaded = "Invalid or unauthorized URL.";
+                }
             }
 
             WebClient wc2 = new WebClient();
