@@ -11,7 +11,7 @@ namespace NETStandaloneBlot.Cryptography
         public void Run()
         {
             // CTSECISSUE:InsufficientEncryptionKeySize
-            RSACryptoServiceProvider rsa = new RSACryptoServiceProvider(1024);
+            RSACryptoServiceProvider rsa = new RSACryptoServiceProvider(2048);
             rsa.Encrypt(new byte[] { }, false);
         }
     }

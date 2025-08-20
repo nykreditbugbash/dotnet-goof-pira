@@ -21,8 +21,22 @@ namespace NETMVCBlot.Controllers.WebService
         [WebMethod]
         public string ReadFile(string fileName)
         {
-            // CTSECISSUE:DirectoryTraversal
-            return File.ReadAllText(@"D:\wwwroot\reports\" + fileName);
+            // Validate fileName to prevent directory traversal
+            if (string.IsNullOrWhiteSpace(fileName) || fileName.IndexOfAny(Path.GetInvalidFileNameChars()) >= 0)
+            {
+                throw new ArgumentException("Invalid file name.");
+            }
+
+            string basePath = @"D:\wwwroot\reports\";
+            string fullPath = Path.GetFullPath(Path.Combine(basePath, fileName));
+
+            // Ensure the file is within the intended directory
+            if (!fullPath.StartsWith(basePath, StringComparison.OrdinalIgnoreCase))
+            {
+                throw new UnauthorizedAccessException("Access to the path is denied.");
+            }
+
+            return File.ReadAllText(fullPath);
         }
 
         public string Helper(string fileName)
