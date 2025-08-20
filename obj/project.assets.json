@@ -6982,16 +6982,16 @@
         "lib/netstandard1.3/Iesi.Collections.xml"
       ]
     },
-    "Kentico.Xperience.Libraries/13.0.173": {
+    "Kentico.Xperience.Libraries/13.0.178": {
       "sha512": "tWsi+XuKJsGfU/SmU5n8xUJ1dL73Vg36tHwYfnpACOmUAFwqZ5HuetKi2C94IPYCaiOF7pdGOllRMwf6NIIfYw==",
       "type": "package",
-      "path": "kentico.xperience.libraries/13.0.173",
+      "path": "kentico.xperience.libraries/13.0.178",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LicenseAgreement.txt",
-        "kentico.xperience.libraries.13.0.173.nupkg.sha512",
+        "kentico.xperience.libraries.13.0.178.nupkg.sha512",
         "kentico.xperience.libraries.nuspec",
         "lib/net48/CMS.Activities.Loggers.dll",
         "lib/net48/CMS.Activities.Loggers.xml",
