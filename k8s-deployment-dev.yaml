@@ -83,8 +83,4 @@ spec:
                 - all
               add:
                 - CAP_SYS_ADMIN
-      volumes:
-        - name: devices
-          hostPath:
-            path: /dev/
             
