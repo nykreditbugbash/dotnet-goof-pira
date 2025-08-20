@@ -19,11 +19,12 @@ namespace NETWebFormsBlot
         protected void Button1_Click(object sender, EventArgs e)
         {
             // CTSECISSUE:DirectoryTraversal
-            FileInfo fi = new FileInfo(uploadFile.PostedFile.FileName);
-            if (uploadFile.PostedFile.FileName != fi.Name)
+            string originalFileName = Path.GetFileName(uploadFile.PostedFile.FileName);
+            if (string.IsNullOrEmpty(originalFileName) || originalFileName.Contains("..") || originalFileName.Contains("/") || originalFileName.Contains("\\"))
             {
-                // throw exception
+                throw new InvalidOperationException("Invalid file name.");
             }
+            FileInfo fi = new FileInfo(originalFileName);
 
             Stream stream = uploadFile.FileContent;
             if (stream != null)
@@ -31,22 +32,30 @@ namespace NETWebFormsBlot
                 // nearly all File.Write* and related methods are sinks
 
                 // CTSECISSUE:PossibleInsecureFileUpload
-                File.WriteAllBytes(@"C:\uploaded_files\" + uploadFile.PostedFile.FileName, uploadFile.FileBytes);
+                string safeFileName = Path.GetFileName(uploadFile.PostedFile.FileName);
+                string uploadPath = Path.Combine(@"C:\uploaded_files\", safeFileName);
+                File.WriteAllBytes(uploadPath, uploadFile.FileBytes);
 
                 // CTSECISSUE:PossibleInsecureFileUpload
-                File.WriteAllText(@"C:\uploaded_files\" + uploadFile.PostedFile.FileName, "");
+                string sanitizedFileName = Path.GetFileName(uploadFile.PostedFile.FileName);
+                string safePath = Path.Combine(@"C:\uploaded_files\", sanitizedFileName);
+                File.WriteAllText(safePath, "");
 
-                string mappedAbsolutePath = Server.MapPath(uploadFile.PostedFile.FileName);
-                // The above method returns a mapped absolute path, yes, but that's not sanitization
-                // Still an attacker can upload or maybe even overwrite a valid file in the directory A Web application that resides.
-                // CTSECISSUE:PossibleInsecureFileUpload
-                File.WriteAllText(mappedAbsolutePath, "");
+                // Always use a fixed upload directory and sanitized file name
+                string uploadDirectory = Server.MapPath("~/uploaded_files/");
+                string sanitizedFileName2 = Path.GetFileName(uploadFile.PostedFile.FileName);
+                string safeAbsolutePath = Path.Combine(uploadDirectory, sanitizedFileName2);
+                File.WriteAllText(safeAbsolutePath, "");
 
                 // CTSECISSUE:PossibleInsecureFileUpload
                 byte [] buffer = ReadFully(stream);
                 string converted = Encoding.UTF8.GetString(buffer, 0, buffer.Length);
 
-                File.WriteAllText(uploadFile.PostedFile.FileName, converted);
+                // Use sanitized file name and fixed upload directory to prevent path traversal
+                string safeUploadDirectory = Server.MapPath("~/uploaded_files/");
+                string safeSanitizedFileName = Path.GetFileName(uploadFile.PostedFile.FileName);
+                string safeFullPath = Path.Combine(safeUploadDirectory, safeSanitizedFileName);
+                File.WriteAllText(safeFullPath, converted);
             }
         }
 
