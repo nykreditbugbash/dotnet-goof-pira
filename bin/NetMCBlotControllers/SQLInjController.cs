@@ -18,21 +18,27 @@ namespace NETMVCBlot.Controllers
         {
             using (ObjectContext studentContext = new ObjectContext("name=StudentEntities"))
             {
-                // CTSECISSUE: SQLInjection
-                studentContext.CreateQuery<Student>("select * from students " + input);
+                // Use parameterized queries to prevent SQL Injection
+                var query = studentContext.CreateQuery<Student>(
+                    "SELECT VALUE s FROM students AS s WHERE s.Name = @name",
+                    new ObjectParameter("name", input));
 
-                // CTSECISSUE: SQLInjection
-                studentContext.ExecuteStoreCommand("select * from students " + input);
+                studentContext.ExecuteStoreCommand(
+                    "SELECT * FROM students WHERE Name = @name",
+                    new System.Data.SqlClient.SqlParameter("@name", input));
 
-                // CTSECISSUE: SQLInjection
-                studentContext.ExecuteStoreQuery<Student>("select * from students " + input);
+                studentContext.ExecuteStoreQuery<Student>(
+                    "SELECT * FROM students WHERE Name = @name",
+                    new System.Data.SqlClient.SqlParameter("@name", input));
 
-                // CTSECISSUE: SQLInjection
-                studentContext.ExecuteStoreQuery<Student>("select * from students " + input, "", MergeOption.AppendOnly);
-            }
-
+            // Use parameterized query for SharePoint FullTextSqlQuery if possible
+            string safeInput = input.Replace("'", "''"); // Basic escaping, consider more robust validation
             FullTextSqlQuery myQuery = new FullTextSqlQuery(SPContext.Current.Site)
             {
+                QueryText = $"SELECT Path FROM SCOPE() WHERE  \"SCOPE\" = '{safeInput}'",
+                ResultTypes = ResultType.RelevantResults
+
+            };
                 // CTSECISSUE: SQLInjection
                 QueryText = "SELECT Path FROM SCOPE() WHERE  \"SCOPE\" = '" + input + "'",
                 ResultTypes = ResultType.RelevantResults
