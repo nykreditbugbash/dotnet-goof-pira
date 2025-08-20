@@ -279,7 +279,7 @@
           }
         }
       },
-      "DotNetNuke.Core/7.4.0.353": {
+      "DotNetNuke.Core/7.4.1.280": {
         "type": "package",
         "compile": {
           "lib/net40/DotNetNuke.dll": {},
@@ -6816,14 +6816,14 @@
         "lib/netstandard2.0/DocumentFormat.OpenXml.xml"
       ]
     },
-    "DotNetNuke.Core/7.4.0.353": {
-      "sha512": "tT/EF5omiP2xNBW5xMyqLYqaI+VzFl+EYPwfKkgqmcpLdEzEf0z3OWa32bTt6VAVeaK/TWwIJE5+K2CauMV+8g==",
+    "DotNetNuke.Core/7.4.1.280": {
+      "sha512": "niWZD2Vl+si7UAD4BkD0fM1At6gwtjP6yRX2o4Lhj+TPtFGirV+f2ufUG6rnvco34zHmliu7wmYnleJIexjDiQ==",
       "type": "package",
-      "path": "dotnetnuke.core/7.4.0.353",
+      "path": "dotnetnuke.core/7.4.1.280",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "dotnetnuke.core.7.4.0.353.nupkg.sha512",
+        "dotnetnuke.core.7.4.1.280.nupkg.sha512",
         "dotnetnuke.core.nuspec",
         "lib/net40/DotNetNuke.dll",
         "lib/net40/Microsoft.ApplicationBlocks.Data.dll"
@@ -17998,7 +17998,7 @@
       "WindowsAzure.Storage >= 9.3.3",
       "Xamarin.Forms >= 4.5.0.617",
       "csla >= 5.5.4",
-      "dotnetnuke.core >= 7.4.0",
+      "dotnetnuke.core >= 7.4.1.280",
       "fastJSON >= 2.4.0.4",
       "kentico.xperience.libraries >= 13.0.173",
       "log4net >= 2.0.8",
@@ -18012,25 +18012,34 @@
     ]
   },
   "packageFolders": {
-    "/Users/pawel/.nuget/packages/": {}
+    "C:\\Users\\PIRA\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/pawel/demo/tmp/dotnet-goof/dotNet-goof.csproj",
+      "projectUniqueName": "C:\\Users\\PIRA\\code\\dotnet-goof-pira\\dotNet-goof.csproj",
       "projectName": "dotNet-goof",
-      "projectPath": "/Users/pawel/demo/tmp/dotnet-goof/dotNet-goof.csproj",
-      "packagesPath": "/Users/pawel/.nuget/packages/",
-      "outputPath": "/Users/pawel/demo/tmp/dotnet-goof/obj/",
+      "projectPath": "C:\\Users\\PIRA\\code\\dotnet-goof-pira\\dotNet-goof.csproj",
+      "packagesPath": "C:\\Users\\PIRA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PIRA\\code\\dotnet-goof-pira\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/pawel/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\PIRA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://maven.nykreditnet.net/nexus/repository/itcm_nuget/": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
@@ -18165,7 +18174,7 @@
           },
           "dotnetnuke.core": {
             "target": "Package",
-            "version": "[7.4.0, )"
+            "version": "[7.4.1.280, )"
           },
           "fastJSON": {
             "target": "Package",
@@ -18225,11 +18234,15 @@
             "version": "[3.1.10, 3.1.10]"
           },
           {
-            "name": "Microsoft.NETCore.App.Host.osx-x64",
+            "name": "Microsoft.NETCore.App.Host.win-x64",
             "version": "[3.1.32, 3.1.32]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
             "version": "[3.1.0, 3.1.0]"
           }
         ],
@@ -18241,25 +18254,15 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.301/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   },
   "logs": [
     {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "dotNet-goof depends on DotNetNuke.Core (>= 7.4.0) but DotNetNuke.Core 7.4.0 was not found. DotNetNuke.Core 7.4.0.353 was resolved instead.",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
       "code": "NU1102",
       "level": "Error",
-      "message": "Unable to find package youtubedlsharp with version (>= 1.2.2)\n  - Found 19 version(s) in nuget.org [ Nearest version: 1.1.2 ]",
+      "message": "Unable to find package youtubedlsharp with version (>= 1.2.2)\r\n  - Found 19 version(s) in nuget.org [ Nearest version: 1.1.2 ]\r\n  - Found 0 version(s) in Microsoft Visual Studio Offline Packages\r\n  - Found 0 version(s) in C:\\Program Files\\dotnet\\library-packs\r\n  - Found 0 version(s) in itcm_nuget",
       "libraryId": "youtubedlsharp",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18268,7 +18271,7 @@
     {
       "code": "NU1101",
       "level": "Error",
-      "message": "Unable to find package opcfoundation.netstandard.opc.ua4. No packages exist with this id in source(s): nuget.org",
+      "message": "Unable to find package opcfoundation.netstandard.opc.ua4. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, itcm_nuget, Microsoft Visual Studio Offline Packages, nuget.org",
       "libraryId": "opcfoundation.netstandard.opc.ua4",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18288,7 +18291,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.0.353 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-3f7v-qx94-666m",
+      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-3f7v-qx94-666m",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18298,7 +18301,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.0.353 has a known high severity vulnerability, https://github.com/advisories/GHSA-4qf5-7xc2-wqpg",
+      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known high severity vulnerability, https://github.com/advisories/GHSA-4qf5-7xc2-wqpg",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18308,7 +18311,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.0.353 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-5c66-x4wm-rjfx",
+      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-5c66-x4wm-rjfx",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18318,7 +18321,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.0.353 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-5whq-j5qg-wjvp",
+      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-5whq-j5qg-wjvp",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18328,7 +18331,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.0.353 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-79m3-rvx2-3qq9",
+      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-79m3-rvx2-3qq9",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18338,7 +18341,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.0.353 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-9phr-h5mx-4fp6",
+      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-9phr-h5mx-4fp6",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18348,7 +18351,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.0.353 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-9w72-2f23-57gm",
+      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-9w72-2f23-57gm",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18358,7 +18361,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.0.353 has a known high severity vulnerability, https://github.com/advisories/GHSA-g8j6-m4p7-5rfq",
+      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known high severity vulnerability, https://github.com/advisories/GHSA-g8j6-m4p7-5rfq",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18368,7 +18371,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.0.353 has a known high severity vulnerability, https://github.com/advisories/GHSA-j3g9-6fx5-gjv7",
+      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known high severity vulnerability, https://github.com/advisories/GHSA-j3g9-6fx5-gjv7",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18378,7 +18381,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.0.353 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m4hf-fxcg-cp34",
+      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m4hf-fxcg-cp34",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18388,7 +18391,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.0.353 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m6w9-8cxc-jff7",
+      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m6w9-8cxc-jff7",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18398,7 +18401,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.0.353 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-vjcm-j85r-7p68",
+      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-vjcm-j85r-7p68",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18408,17 +18411,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.0.353 has a known high severity vulnerability, https://github.com/advisories/GHSA-x2rg-fmcv-crq5",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1904",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.0.353 has a known critical severity vulnerability, https://github.com/advisories/GHSA-x8f7-h444-97w4",
+      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known high severity vulnerability, https://github.com/advisories/GHSA-x2rg-fmcv-crq5",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18428,7 +18421,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.0.353 has a known high severity vulnerability, https://github.com/advisories/GHSA-xx3h-j3cx-8qfj",
+      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known high severity vulnerability, https://github.com/advisories/GHSA-xx3h-j3cx-8qfj",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18628,7 +18621,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core 7.4.0.353' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Package 'DotNetNuke.Core 7.4.1.280' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
       "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18757,7 +18750,7 @@
     {
       "code": "NU1605",
       "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: System.Data.SqlClient from 4.8.6 to 4.6.1. Reference the package directly from the project to select a different version. \n dotNet-goof -> Kentico.Xperience.Libraries 13.0.173 -> System.Data.SqlClient (>= 4.8.6) \n dotNet-goof -> System.Data.SqlClient (>= 4.6.1)",
+      "message": "Warning As Error: Detected package downgrade: System.Data.SqlClient from 4.8.6 to 4.6.1. Reference the package directly from the project to select a different version. \r\n dotNet-goof -> Kentico.Xperience.Libraries 13.0.173 -> System.Data.SqlClient (>= 4.8.6) \r\n dotNet-goof -> System.Data.SqlClient (>= 4.6.1)",
       "libraryId": "System.Data.SqlClient",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18766,7 +18759,7 @@
     {
       "code": "NU1605",
       "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: Microsoft.Win32.Registry from 4.6.0 to 4.5.0. Reference the package directly from the project to select a different version. \n dotNet-goof -> Kentico.Xperience.Libraries 13.0.173 -> System.Diagnostics.EventLog 4.6.0 -> Microsoft.Win32.Registry (>= 4.6.0) \n dotNet-goof -> Microsoft.Win32.Registry (>= 4.5.0)",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.Win32.Registry from 4.6.0 to 4.5.0. Reference the package directly from the project to select a different version. \r\n dotNet-goof -> Kentico.Xperience.Libraries 13.0.173 -> System.Diagnostics.EventLog 4.6.0 -> Microsoft.Win32.Registry (>= 4.6.0) \r\n dotNet-goof -> Microsoft.Win32.Registry (>= 4.5.0)",
       "libraryId": "Microsoft.Win32.Registry",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18775,7 +18768,7 @@
     {
       "code": "NU1605",
       "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: System.Text.Encoding.CodePages from 8.0.0 to 6.0.0. Reference the package directly from the project to select a different version. \n dotNet-goof -> Kentico.Xperience.Libraries 13.0.173 -> MailKit 4.7.1.1 -> MimeKit 4.7.1 -> System.Text.Encoding.CodePages (>= 8.0.0) \n dotNet-goof -> Kentico.Xperience.Libraries 13.0.173 -> System.Text.Encoding.CodePages (>= 6.0.0)",
+      "message": "Warning As Error: Detected package downgrade: System.Text.Encoding.CodePages from 8.0.0 to 6.0.0. Reference the package directly from the project to select a different version. \r\n dotNet-goof -> Kentico.Xperience.Libraries 13.0.173 -> MailKit 4.7.1.1 -> MimeKit 4.7.1 -> System.Text.Encoding.CodePages (>= 8.0.0) \r\n dotNet-goof -> Kentico.Xperience.Libraries 13.0.173 -> System.Text.Encoding.CodePages (>= 6.0.0)",
       "libraryId": "System.Text.Encoding.CodePages",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"

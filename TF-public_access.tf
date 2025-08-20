@@ -79,7 +79,7 @@ resource "aws_rds_cluster_instance" "rds" {
   instance_class     = "db.r4.large"
   engine             = aws_rds_cluster.default.engine
   engine_version     = aws_rds_cluster.default.engine_version
-  publicly_accessible = true
+  publicly_accessible = false
 }
 
 resource "aws_redshift_cluster" "redshift" {
@@ -89,5 +89,5 @@ resource "aws_redshift_cluster" "redshift" {
   master_password    = "Mustbe8characters"
   node_type          = "dc1.large"
   cluster_type       = "single-node"
-  publicly_accessible = true
+  publicly_accessible = false
 }

@@ -30,7 +30,7 @@ spec:
         hostnames:
         - "foo.remote"
         - "bar.remote"
-      hostPID: true
+      hostPID: false
       containers:
         - name: snyky1
           image: "garethr/snyky1:latest"
@@ -70,10 +70,10 @@ spec:
               # memory: 100
           securityContext:
             readOnlyRootFilesystem: false
-            allowPrivilegeEscalation: true
+            allowPrivilegeEscalation: false
             # runAsNonRoot: true
             runAsUser: 1
-            privileged: true
+            privileged: false
             capabilities:
               # drop:
                 # - all
@@ -83,7 +83,4 @@ spec:
         - name: devices
           hostPath:
             path: /dev/
-        - name: dockersock
-          hostPath:
-            path: /var/run/docker.sock  
             
