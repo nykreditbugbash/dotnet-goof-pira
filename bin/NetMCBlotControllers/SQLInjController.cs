@@ -13,6 +13,7 @@ namespace NETMVCBlot.Controllers
 {
     public class SQLInjController : Controller
     {
+        [ValidateAntiForgeryToken]
         public ActionResult Index(string input)
         {
             using (ObjectContext studentContext = new ObjectContext("name=StudentEntities"))
