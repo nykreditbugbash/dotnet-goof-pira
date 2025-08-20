@@ -79,8 +79,8 @@ spec:
             runAsUser: 1
             privileged: false
             capabilities:
-              # drop:
-                # - all
+              drop:
+                - all
               add:
                 - CAP_SYS_ADMIN
       volumes:
