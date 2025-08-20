@@ -17,17 +17,26 @@ namespace NETMVCBlot.Controllers
         {
             using (ObjectContext studentContext = new ObjectContext("name=StudentEntities"))
             {
-                // CTSECISSUE: SQLInjection
-                studentContext.CreateQuery<Student>("select * from students " + input);
+                // FIXED: Use parameterized query to prevent SQL Injection
+                var query = studentContext.CreateQuery<Student>(
+                    "select * from students where Name = @name",
+                    new ObjectParameter("name", input)
+                );
 
-                // CTSECISSUE: SQLInjection
-                studentContext.ExecuteStoreCommand("select * from students " + input);
+                // FIXED: Use parameterized query to prevent SQL Injection
+                studentContext.ExecuteStoreCommand("select * from students where Name = @name", new ObjectParameter("name", input));
 
-                // CTSECISSUE: SQLInjection
-                studentContext.ExecuteStoreQuery<Student>("select * from students " + input);
+                // FIXED: Use parameterized query to prevent SQL Injection
+                studentContext.ExecuteStoreQuery<Student>(
+                    "select * from students where Name = @name",
+                    new ObjectParameter("name", input)
+                );
 
-                // CTSECISSUE: SQLInjection
-                studentContext.ExecuteStoreQuery<Student>("select * from students " + input, "", MergeOption.AppendOnly);
+                // FIXED: Use parameterized query to prevent SQL Injection
+                studentContext.ExecuteStoreQuery<Student>(
+                    "select * from students where Name = @name",
+                    new ObjectParameter("name", input)
+                );
             }
 
             FullTextSqlQuery myQuery = new FullTextSqlQuery(SPContext.Current.Site)
