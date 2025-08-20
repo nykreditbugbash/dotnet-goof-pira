@@ -153,7 +153,7 @@ namespace NETMVCBlot.Controllers
             {
                 // ruleid: insecure-losformatter-deserialization
                 LosFormatter losFormatter = new LosFormatter();
-                object obj = losFormatter.Deserialize(json);
+                object obj = JsonConvert.DeserializeObject(json);
             }
             catch (Exception e)
             {
