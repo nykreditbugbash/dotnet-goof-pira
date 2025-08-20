@@ -74,7 +74,7 @@
             },
             "Microsoft.AspNet.Identity.Owin": {
               "target": "Package",
-              "version": "[2.2.2, )"
+              "version": "[2.2.4, )"
             },
             "Microsoft.AspNet.WebApi.Core": {
               "target": "Package",
@@ -111,7 +111,7 @@
             },
             "NHibernate": {
               "target": "Package",
-              "version": "[5.2.6, )"
+              "version": "[5.5.2, )"
             },
             "NLog": {
               "target": "Package",
@@ -123,7 +123,7 @@
             },
             "System.Data.SqlClient": {
               "target": "Package",
-              "version": "[4.6.1, )"
+              "version": "[4.8.6, )"
             },
             "System.DirectoryServices": {
               "target": "Package",
@@ -163,7 +163,7 @@
             },
             "dotnetnuke.core": {
               "target": "Package",
-              "version": "[7.4.1.280, )"
+              "version": "[10.0.1, )"
             },
             "fastJSON": {
               "target": "Package",
@@ -171,7 +171,7 @@
             },
             "kentico.xperience.libraries": {
               "target": "Package",
-              "version": "[13.0.173, )"
+              "version": "[13.0.178, )"
             },
             "log4net": {
               "target": "Package",
@@ -179,11 +179,11 @@
             },
             "microsoft.aspnetcore.app.runtime.linux-x64": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.10, )"
             },
             "microsoft.aspnetcore.app.runtime.win-x86": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[8.0.7, )"
             },
             "opcfoundation.netstandard.opc.ua4": {
               "target": "Package",

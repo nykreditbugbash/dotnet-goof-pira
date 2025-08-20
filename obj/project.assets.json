@@ -279,15 +279,42 @@
           }
         }
       },
-      "DotNetNuke.Core/7.4.1.280": {
+      "DotNetNuke.Core/10.0.1": {
         "type": "package",
+        "dependencies": {
+          "DotNetNuke.DependencyInjection": "10.0.1"
+        },
         "compile": {
-          "lib/net40/DotNetNuke.dll": {},
-          "lib/net40/Microsoft.ApplicationBlocks.Data.dll": {}
+          "lib/net48/DotNetNuke.dll": {},
+          "lib/net48/Microsoft.ApplicationBlocks.Data.dll": {}
         },
         "runtime": {
-          "lib/net40/DotNetNuke.dll": {},
-          "lib/net40/Microsoft.ApplicationBlocks.Data.dll": {}
+          "lib/net48/DotNetNuke.dll": {},
+          "lib/net48/Microsoft.ApplicationBlocks.Data.dll": {}
+        }
+      },
+      "DotNetNuke.DependencyInjection/10.0.1": {
+        "type": "package",
+        "dependencies": {
+          "DotNetNuke.Instrumentation": "10.0.1",
+          "Microsoft.Extensions.DependencyInjection": "8.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/DotNetNuke.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/DotNetNuke.DependencyInjection.dll": {}
+        }
+      },
+      "DotNetNuke.Instrumentation/10.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net48/DotNetNuke.Instrumentation.dll": {},
+          "lib/net48/DotNetNuke.Log4Net.dll": {}
+        },
+        "runtime": {
+          "lib/net48/DotNetNuke.Instrumentation.dll": {},
+          "lib/net48/DotNetNuke.Log4Net.dll": {}
         }
       },
       "EntityFramework/6.2.0": {
@@ -431,7 +458,7 @@
           }
         }
       },
-      "Kentico.Xperience.Libraries/13.0.173": {
+      "Kentico.Xperience.Libraries/13.0.178": {
         "type": "package",
         "dependencies": {
           "AWSSDK.Core": "3.5.1.13",
@@ -913,10 +940,10 @@
           }
         }
       },
-      "Microsoft.AspNet.Identity.Owin/2.2.2": {
+      "Microsoft.AspNet.Identity.Owin/2.2.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNet.Identity.Core": "2.2.2",
+          "Microsoft.AspNet.Identity.Core": "2.2.4",
           "Microsoft.Owin.Security": "3.0.1",
           "Microsoft.Owin.Security.Cookies": "3.0.1",
           "Microsoft.Owin.Security.OAuth": "3.0.1"
@@ -965,532 +992,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.App.Runtime.linux-x64/8.0.0": {
+      "Microsoft.AspNetCore.App.Runtime.linux-x64/8.0.10": {
         "type": "package"
       },
-      "Microsoft.AspNetCore.App.Runtime.win-x86/3.0.0": {
+      "Microsoft.AspNetCore.App.Runtime.win-x86/8.0.7": {
         "type": "package",
         "runtimeTargets": {
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Antiforgery.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.Abstractions.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.Cookies.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.Core.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.OAuth.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authorization.Policy.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authorization.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Components.Authorization.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Components.Forms.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Components.Server.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Components.Web.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Components.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Connections.Abstractions.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.CookiePolicy.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Cors.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.DataProtection.Abstractions.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.DataProtection.Extensions.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.DataProtection.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Diagnostics.Abstractions.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Diagnostics.HealthChecks.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Diagnostics.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.HostFiltering.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Hosting.Abstractions.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Hosting.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Html.Abstractions.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Abstractions.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Connections.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Extensions.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Features.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.HttpOverrides.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.HttpsPolicy.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Identity.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Localization.Routing.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Localization.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Metadata.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Abstractions.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.ApiExplorer.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Core.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Cors.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.DataAnnotations.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Formatters.Json.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Formatters.Xml.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Localization.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Razor.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.RazorPages.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.TagHelpers.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.ViewFeatures.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Razor.Runtime.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Razor.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.ResponseCaching.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.ResponseCompression.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Rewrite.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Routing.Abstractions.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Routing.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.HttpSys.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.IIS.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.IISIntegration.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.Kestrel.Core.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.Kestrel.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Session.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.SignalR.Common.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.SignalR.Core.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.SignalR.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.StaticFiles.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.WebSockets.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.WebUtilities.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Caching.Abstractions.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Caching.Memory.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Binder.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.CommandLine.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Ini.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Json.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.KeyPerFile.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.UserSecrets.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Xml.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Diagnostics.HealthChecks.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Composite.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Embedded.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Physical.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.FileSystemGlobbing.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Hosting.Abstractions.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Hosting.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Http.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Identity.Core.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Identity.Stores.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Localization.Abstractions.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Localization.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.Abstractions.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.Configuration.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.Console.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.Debug.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.EventLog.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.EventSource.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.TraceSource.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.ObjectPool.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Options.DataAnnotations.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Options.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.WebEncoders.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.JSInterop.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Net.Http.Headers.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/System.Diagnostics.EventLog.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/System.Drawing.Common.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/System.IO.Pipelines.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/System.Security.Cryptography.Pkcs.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/System.Security.Cryptography.Xml.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/System.Security.Permissions.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/lib/netcoreapp3.0/System.Windows.Extensions.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          },
           "runtimes/win-x86/native/aspnetcorev2_inprocess.dll": {
             "assetType": "native",
             "rid": "win-x86"
@@ -1998,33 +1505,39 @@
           }
         }
       },
-      "Microsoft.Extensions.DependencyInjection/3.1.9": {
+      "Microsoft.Extensions.DependencyInjection/8.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.9"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
         },
         "compile": {
-          "lib/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll": {
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll": {
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {
             "related": ".xml"
           }
+        },
+        "build": {
+          "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.targets": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.9": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
             "related": ".xml"
           }
+        },
+        "build": {
+          "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.targets": {}
         }
       },
       "Microsoft.Extensions.FileProviders.Abstractions/3.1.8": {
@@ -3275,14 +2788,14 @@
           }
         }
       },
-      "NHibernate/5.2.6": {
+      "NHibernate/5.5.2": {
         "type": "package",
         "dependencies": {
           "Antlr3.Runtime": "[3.5.1, 4.0.0)",
           "Iesi.Collections": "[4.0.4, 5.0.0)",
           "Remotion.Linq": "[2.2.0, 3.0.0)",
           "Remotion.Linq.EagerFetching": "[2.2.0, 3.0.0)",
-          "System.Configuration.ConfigurationManager": "4.4.1"
+          "System.Configuration.ConfigurationManager": "4.7.0"
         },
         "compile": {
           "lib/netcoreapp2.0/NHibernate.dll": {
@@ -3499,7 +3012,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "runtime.native.System.Data.SqlClient.sni/4.5.0": {
+      "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
         "dependencies": {
           "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
@@ -4063,13 +3576,12 @@
           }
         }
       },
-      "System.Data.SqlClient/4.6.1": {
+      "System.Data.SqlClient/4.8.6": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.Registry": "4.5.0",
-          "System.Security.Principal.Windows": "4.5.0",
-          "System.Text.Encoding.CodePages": "4.5.0",
-          "runtime.native.System.Data.SqlClient.sni": "4.5.0"
+          "Microsoft.Win32.Registry": "4.7.0",
+          "System.Security.Principal.Windows": "4.7.0",
+          "runtime.native.System.Data.SqlClient.sni": "4.7.0"
         },
         "compile": {
           "ref/netcoreapp2.1/System.Data.SqlClient.dll": {
@@ -4077,7 +3589,9 @@
           }
         },
         "runtime": {
-          "lib/netcoreapp2.1/System.Data.SqlClient.dll": {}
+          "lib/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "related": ".xml"
+          }
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
@@ -6816,17 +6330,45 @@
         "lib/netstandard2.0/DocumentFormat.OpenXml.xml"
       ]
     },
-    "DotNetNuke.Core/7.4.1.280": {
-      "sha512": "niWZD2Vl+si7UAD4BkD0fM1At6gwtjP6yRX2o4Lhj+TPtFGirV+f2ufUG6rnvco34zHmliu7wmYnleJIexjDiQ==",
+    "DotNetNuke.Core/10.0.1": {
+      "sha512": "lBsdhpUVK1PoSCXLxCj/44T/POlcVpRo/EkaS1DTXvrAI1cy7nM4c47otcmHnzNB33qwFmaA22iRiCPqd6eYxw==",
       "type": "package",
-      "path": "dotnetnuke.core/7.4.1.280",
+      "path": "dotnetnuke.core/10.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "dotnetnuke.core.7.4.1.280.nupkg.sha512",
+        "dotnetnuke.core.10.0.1.nupkg.sha512",
         "dotnetnuke.core.nuspec",
-        "lib/net40/DotNetNuke.dll",
-        "lib/net40/Microsoft.ApplicationBlocks.Data.dll"
+        "images/logo-for-nuget.png",
+        "lib/net48/DotNetNuke.dll",
+        "lib/net48/Microsoft.ApplicationBlocks.Data.dll"
+      ]
+    },
+    "DotNetNuke.DependencyInjection/10.0.1": {
+      "sha512": "jq8TRe44dQnjFJfeyxibYryhwTxNh1UrBhi2rfkHwzjEk+OX/26SZJ5dDTSRjrjeW3MYKkkMBZrswA0AfogcOA==",
+      "type": "package",
+      "path": "dotnetnuke.dependencyinjection/10.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dotnetnuke.dependencyinjection.10.0.1.nupkg.sha512",
+        "dotnetnuke.dependencyinjection.nuspec",
+        "images/logo-for-nuget.png",
+        "lib/netstandard2.0/DotNetNuke.DependencyInjection.dll"
+      ]
+    },
+    "DotNetNuke.Instrumentation/10.0.1": {
+      "sha512": "V26tTslXI93a7GY7unbB6DpQg2gQbaD7OSmzSFgzbDTqgm3xwiKcqoDbJjQ/rVUDfslPwaJAFUrktPDpIJnNmQ==",
+      "type": "package",
+      "path": "dotnetnuke.instrumentation/10.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dotnetnuke.instrumentation.10.0.1.nupkg.sha512",
+        "dotnetnuke.instrumentation.nuspec",
+        "images/logo-for-nuget.png",
+        "lib/net48/DotNetNuke.Instrumentation.dll",
+        "lib/net48/DotNetNuke.Log4Net.dll"
       ]
     },
     "EntityFramework/6.2.0": {
@@ -6983,7 +6525,7 @@
       ]
     },
     "Kentico.Xperience.Libraries/13.0.178": {
-      "sha512": "tWsi+XuKJsGfU/SmU5n8xUJ1dL73Vg36tHwYfnpACOmUAFwqZ5HuetKi2C94IPYCaiOF7pdGOllRMwf6NIIfYw==",
+      "sha512": "WGwEVykAFpdJywpY3kcQ6MXe4MBn2BMnrrNIt7GfXM7/n9yR5vrCKNI/KXvrZLtlZL4YBOFl1j6NhKRLWm78mg==",
       "type": "package",
       "path": "kentico.xperience.libraries/13.0.178",
       "files": [
@@ -7447,16 +6989,16 @@
         "microsoft.aspnet.identity.entityframework.nuspec"
       ]
     },
-    "Microsoft.AspNet.Identity.Owin/2.2.2": {
-      "sha512": "oZ+whh1KqOmX/ODPy2gXmgDF3vq0bg1NX1Jsr07+DTtOn/3xh6PCPouNPMhNrVRHfe3E7zPdTUnagnHNr1zUXQ==",
+    "Microsoft.AspNet.Identity.Owin/2.2.4": {
+      "sha512": "u3SmsjXT/43Xas/xJx4Mz9FImMxfxz9npmFLXRDc8j7Ni3vkoRNK9zryx3i60WVPIxnVlJsJcCe6PaBuPJJscw==",
       "type": "package",
-      "path": "microsoft.aspnet.identity.owin/2.2.2",
+      "path": "microsoft.aspnet.identity.owin/2.2.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/Microsoft.AspNet.Identity.Owin.dll",
         "lib/net45/Microsoft.AspNet.Identity.Owin.xml",
-        "microsoft.aspnet.identity.owin.2.2.2.nupkg.sha512",
+        "microsoft.aspnet.identity.owin.2.2.4.nupkg.sha512",
         "microsoft.aspnet.identity.owin.nuspec"
       ]
     },
@@ -7491,10 +7033,10 @@
         "microsoft.aspnet.webapi.core.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.App.Runtime.linux-x64/8.0.0": {
-      "sha512": "mUA3OfRmS059yob8ZKeaDjkFlGT1zveiWx5O/UXxYLrsQNBY6HINIlDFvzPOZj8Uesp2fCNOPflMucMAFcqlPg==",
+    "Microsoft.AspNetCore.App.Runtime.linux-x64/8.0.10": {
+      "sha512": "njU8gh4hZis0MeVrsQedb8PPKxa3XWybiOXXpEPOekkahwZ8hsNAeDxSZeE513QpZWZOclAT3fXEO7r/lQRryA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.app.runtime.linux-x64/8.0.0",
+      "path": "microsoft.aspnetcore.app.runtime.linux-x64/8.0.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7503,7 +7045,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "data/PlatformManifest.txt",
         "data/RuntimeList.xml",
-        "microsoft.aspnetcore.app.runtime.linux-x64.8.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.app.runtime.linux-x64.8.0.10.nupkg.sha512",
         "microsoft.aspnetcore.app.runtime.linux-x64.nuspec",
         "runtimes/linux-x64/lib/net8.0/Microsoft.AspNetCore.Antiforgery.dll",
         "runtimes/linux-x64/lib/net8.0/Microsoft.AspNetCore.App.deps.json",
@@ -7648,148 +7190,162 @@
         "runtimes/linux-x64/lib/net8.0/System.Threading.RateLimiting.dll"
       ]
     },
-    "Microsoft.AspNetCore.App.Runtime.win-x86/3.0.0": {
-      "sha512": "1UE12ECJMICpzY2VJYGwwPkcT2Jx0Irt/nparSd5JBbjZDu2vH8fJL3JQ+zGW0qJIWiEIcbX6Kywhp/b5pwVsA==",
+    "Microsoft.AspNetCore.App.Runtime.win-x86/8.0.7": {
+      "sha512": "fEezjCrT15MC6u/MInY93ReXRv/HKgRwnHK7Hd2tVrHJuletD3pWfiYL6jm2DB/+fNDuJbi6LsC68eqhLvFO+Q==",
       "type": "package",
-      "path": "microsoft.aspnetcore.app.runtime.win-x86/3.0.0",
+      "path": "microsoft.aspnetcore.app.runtime.win-x86/8.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
+        "Microsoft.AspNetCore.App.versions.txt",
+        "THIRD-PARTY-NOTICES.TXT",
+        "data/PlatformManifest.txt",
         "data/RuntimeList.xml",
-        "microsoft.aspnetcore.app.runtime.win-x86.3.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.app.runtime.win-x86.8.0.7.nupkg.sha512",
         "microsoft.aspnetcore.app.runtime.win-x86.nuspec",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Antiforgery.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.App.deps.json",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.App.runtimeconfig.json",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.Cookies.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.Core.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.OAuth.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authorization.Policy.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authorization.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Components.Authorization.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Components.Forms.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Components.Server.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Components.Web.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Components.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Connections.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.CookiePolicy.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Cors.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Cryptography.Internal.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.DataProtection.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.DataProtection.Extensions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.DataProtection.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Diagnostics.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Diagnostics.HealthChecks.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Diagnostics.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.HostFiltering.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Hosting.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Hosting.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Html.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Connections.Common.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Connections.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Extensions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Features.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.HttpOverrides.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.HttpsPolicy.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Identity.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Localization.Routing.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Localization.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Metadata.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.ApiExplorer.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Core.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Cors.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.DataAnnotations.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Formatters.Json.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Formatters.Xml.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Localization.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Razor.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.RazorPages.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.TagHelpers.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.ViewFeatures.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Razor.Runtime.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Razor.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.ResponseCaching.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.ResponseCompression.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Rewrite.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Routing.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Routing.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.HttpSys.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.IIS.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.IISIntegration.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.Kestrel.Core.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.Kestrel.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Session.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.SignalR.Common.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.SignalR.Core.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.SignalR.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.StaticFiles.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.WebSockets.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.WebUtilities.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Caching.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Caching.Memory.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Binder.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.CommandLine.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.FileExtensions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Ini.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Json.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.KeyPerFile.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.UserSecrets.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Xml.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Diagnostics.HealthChecks.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Composite.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Embedded.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Physical.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.FileSystemGlobbing.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Hosting.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Hosting.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Http.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Identity.Core.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Identity.Stores.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Localization.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Localization.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.Configuration.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.Console.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.Debug.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.EventLog.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.EventSource.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.TraceSource.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.ObjectPool.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Options.DataAnnotations.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Options.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.WebEncoders.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.JSInterop.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Net.Http.Headers.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/System.Diagnostics.EventLog.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/System.Drawing.Common.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/System.IO.Pipelines.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/System.Security.Cryptography.Pkcs.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/System.Security.Cryptography.Xml.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/System.Security.Permissions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/System.Windows.Extensions.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Antiforgery.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.App.deps.json",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.App.runtimeconfig.json",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Authentication.Abstractions.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Authentication.BearerToken.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Authentication.Cookies.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Authentication.Core.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Authentication.OAuth.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Authentication.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Authorization.Policy.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Authorization.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Components.Authorization.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Components.Endpoints.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Components.Forms.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Components.Server.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Components.Web.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Components.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Connections.Abstractions.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.CookiePolicy.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Cors.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Cryptography.Internal.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.DataProtection.Abstractions.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.DataProtection.Extensions.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.DataProtection.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Diagnostics.Abstractions.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Diagnostics.HealthChecks.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Diagnostics.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.HostFiltering.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Hosting.Abstractions.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Hosting.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Html.Abstractions.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Http.Abstractions.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Http.Connections.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Http.Extensions.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Http.Features.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Http.Results.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Http.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.HttpLogging.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.HttpOverrides.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.HttpsPolicy.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Identity.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Localization.Routing.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Localization.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Metadata.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Mvc.Abstractions.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Mvc.ApiExplorer.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Mvc.Core.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Mvc.Cors.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Mvc.DataAnnotations.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Mvc.Formatters.Json.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Mvc.Formatters.Xml.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Mvc.Localization.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Mvc.Razor.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Mvc.RazorPages.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Mvc.TagHelpers.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Mvc.ViewFeatures.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Mvc.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.OutputCaching.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.RateLimiting.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Razor.Runtime.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Razor.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.RequestDecompression.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.ResponseCaching.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.ResponseCompression.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Rewrite.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Routing.Abstractions.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Routing.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Server.HttpSys.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Server.IIS.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Server.IISIntegration.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Server.Kestrel.Core.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Server.Kestrel.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.Session.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.SignalR.Common.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.SignalR.Core.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.SignalR.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.StaticFiles.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.WebSockets.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.WebUtilities.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.AspNetCore.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Caching.Abstractions.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Caching.Memory.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Configuration.Binder.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Configuration.CommandLine.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Configuration.FileExtensions.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Configuration.Ini.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Configuration.Json.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Configuration.KeyPerFile.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Configuration.UserSecrets.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Configuration.Xml.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Configuration.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.DependencyInjection.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Diagnostics.Abstractions.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Diagnostics.HealthChecks.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Diagnostics.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Features.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.FileProviders.Composite.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.FileProviders.Embedded.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.FileProviders.Physical.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Hosting.Abstractions.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Hosting.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Http.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Identity.Core.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Identity.Stores.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Localization.Abstractions.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Localization.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Logging.Configuration.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Logging.Console.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Logging.Debug.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Logging.EventLog.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Logging.EventSource.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Logging.TraceSource.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Logging.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.ObjectPool.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Options.DataAnnotations.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Options.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.Primitives.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Extensions.WebEncoders.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.JSInterop.dll",
+        "runtimes/win-x86/lib/net8.0/Microsoft.Net.Http.Headers.dll",
+        "runtimes/win-x86/lib/net8.0/System.Diagnostics.EventLog.Messages.dll",
+        "runtimes/win-x86/lib/net8.0/System.Diagnostics.EventLog.dll",
+        "runtimes/win-x86/lib/net8.0/System.IO.Pipelines.dll",
+        "runtimes/win-x86/lib/net8.0/System.Security.Cryptography.Pkcs.dll",
+        "runtimes/win-x86/lib/net8.0/System.Security.Cryptography.Xml.dll",
+        "runtimes/win-x86/lib/net8.0/System.Threading.RateLimiting.dll",
         "runtimes/win-x86/native/aspnetcorev2_inprocess.dll"
       ]
     },
@@ -8514,38 +8070,68 @@
         "microsoft.extensions.configuration.binder.nuspec"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection/3.1.9": {
-      "sha512": "ORqfrAACcvTInie1oGola5uky344/PiNfgayTPuZWV4WnSfIQZJQm/ZLpGshJE3h7TqwYaYElGazK/yaM2bFLA==",
+    "Microsoft.Extensions.DependencyInjection/8.0.0": {
+      "sha512": "V8S3bsm50ig6JSyrbcJJ8bW2b9QLGouz+G1miK3UTaOWmMtFwNNNzUf4AleyDWUmTrWMLNnFSLEQtxmxgNQnNQ==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection/3.1.9",
+      "path": "microsoft.extensions.dependencyinjection/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "lib/net461/Microsoft.Extensions.DependencyInjection.dll",
-        "lib/net461/Microsoft.Extensions.DependencyInjection.xml",
-        "lib/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll",
-        "lib/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.xml",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.DependencyInjection.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.targets",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.xml",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
-        "microsoft.extensions.dependencyinjection.3.1.9.nupkg.sha512",
-        "microsoft.extensions.dependencyinjection.nuspec"
+        "microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.9": {
-      "sha512": "8PkcaPwiTPOhqshoY4+rQUbz86X6YpLDLUqXOezh7L2A3pgpBmeBBByYIffofBlvQxDdQ0zB2DkWjbZWyCxRWg==",
+    "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
+      "sha512": "cjWrLkJXK0rs4zofsK4bSdg+jhDLTaxrkXu4gS6Y7MAlCvRyNNgwY/lJi5RDlQOnSZweHqoyvgvbdvQsRIW+hg==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.9",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "microsoft.extensions.dependencyinjection.abstractions.3.1.9.nupkg.sha512",
-        "microsoft.extensions.dependencyinjection.abstractions.nuspec"
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "Microsoft.Extensions.FileProviders.Abstractions/3.1.8": {
@@ -9981,10 +9567,10 @@
         "newtonsoft.json.bson.nuspec"
       ]
     },
-    "NHibernate/5.2.6": {
-      "sha512": "fsRZPLgwrYy6ta2+FmxjUx20a7h0uUk5tIyVFEKAYSY7BG0Qax1lGjfspxchFn9h9gkp1zqQEWNGJoo/RaVmlg==",
+    "NHibernate/5.5.2": {
+      "sha512": "qTFlQDp7eDW96u2vNwpaa28uWz5eSKT/73P7RfUob3Aj2Zop7xnMZyAm7wlJmf5eX3DVn8W7SwM5QrXfkvVR/w==",
       "type": "package",
-      "path": "nhibernate/5.2.6",
+      "path": "nhibernate/5.5.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -10000,18 +9586,25 @@
         "ConfigurationTemplates/SqlServerCe.cfg.xml",
         "ConfigurationTemplates/SybaseASE.cfg.xml",
         "ConfigurationTemplates/SybaseSQLAnywhere.cfg.xml",
+        "NHibernate-NuGet.png",
         "NHibernate.license.txt",
         "NHibernate.readme.md",
         "NHibernate.releasenotes.txt",
         "lib/net461/NHibernate.dll",
         "lib/net461/NHibernate.xml",
+        "lib/net48/NHibernate.dll",
+        "lib/net48/NHibernate.xml",
+        "lib/net6.0/NHibernate.dll",
+        "lib/net6.0/NHibernate.xml",
         "lib/netcoreapp2.0/NHibernate.dll",
         "lib/netcoreapp2.0/NHibernate.xml",
         "lib/netstandard2.0/NHibernate.dll",
         "lib/netstandard2.0/NHibernate.xml",
+        "lib/netstandard2.1/NHibernate.dll",
+        "lib/netstandard2.1/NHibernate.xml",
         "nhibernate-configuration.xsd",
         "nhibernate-mapping.xsd",
-        "nhibernate.5.2.6.nupkg.sha512",
+        "nhibernate.5.5.2.nupkg.sha512",
         "nhibernate.nuspec"
       ]
     },
@@ -11279,16 +10872,16 @@
         "runtime.native.system.nuspec"
       ]
     },
-    "runtime.native.System.Data.SqlClient.sni/4.5.0": {
-      "sha512": "AJfX7owAAkMjWQYhoml5IBfXh8UyYPjktn8pK0BFGAdKgBS7HqMz1fw5vdzfZUWfhtTPDGCjgNttt46ZyEmSjg==",
+    "runtime.native.System.Data.SqlClient.sni/4.7.0": {
+      "sha512": "9kyFSIdN3T0qjDQ2R0HRXYIhS3l5psBzQi6qqhdLz+SzFyEy4sVxNOke+yyYv8Cu8rPER12c3RDjLT8wF3WBYQ==",
       "type": "package",
-      "path": "runtime.native.system.data.sqlclient.sni/4.5.0",
+      "path": "runtime.native.system.data.sqlclient.sni/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "runtime.native.system.data.sqlclient.sni.4.5.0.nupkg.sha512",
+        "runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
         "runtime.native.system.data.sqlclient.sni.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -12285,13 +11878,14 @@
         "system.data.hashfunction.interfaces.nuspec"
       ]
     },
-    "System.Data.SqlClient/4.6.1": {
-      "sha512": "7MTJhBFt4/tSJ2VRpG+TQNPcDdbCnWuoYzbe0kD5O3mQ7aZ2Q+Q3D9Y5Y3/aper5Gp3Lrs+8edk9clvxyPYXPw==",
+    "System.Data.SqlClient/4.8.6": {
+      "sha512": "2Ij/LCaTQRyAi5lAv7UUTV9R2FobC8xN9mE0fXBZohum/xLl8IZVmE98Rq5ugQHjCgTBRKqpXRb4ORulRdA6Ig==",
       "type": "package",
-      "path": "system.data.sqlclient/4.6.1",
+      "path": "system.data.sqlclient/4.8.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
@@ -12299,10 +11893,15 @@
         "lib/net451/System.Data.SqlClient.dll",
         "lib/net46/System.Data.SqlClient.dll",
         "lib/net461/System.Data.SqlClient.dll",
+        "lib/net461/System.Data.SqlClient.xml",
         "lib/netcoreapp2.1/System.Data.SqlClient.dll",
+        "lib/netcoreapp2.1/System.Data.SqlClient.xml",
         "lib/netstandard1.2/System.Data.SqlClient.dll",
+        "lib/netstandard1.2/System.Data.SqlClient.xml",
         "lib/netstandard1.3/System.Data.SqlClient.dll",
+        "lib/netstandard1.3/System.Data.SqlClient.xml",
         "lib/netstandard2.0/System.Data.SqlClient.dll",
+        "lib/netstandard2.0/System.Data.SqlClient.xml",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
@@ -12344,16 +11943,22 @@
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
         "runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll",
+        "runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.xml",
         "runtimes/unix/lib/netstandard1.3/System.Data.SqlClient.dll",
         "runtimes/unix/lib/netstandard2.0/System.Data.SqlClient.dll",
+        "runtimes/unix/lib/netstandard2.0/System.Data.SqlClient.xml",
         "runtimes/win/lib/net451/System.Data.SqlClient.dll",
         "runtimes/win/lib/net46/System.Data.SqlClient.dll",
         "runtimes/win/lib/net461/System.Data.SqlClient.dll",
+        "runtimes/win/lib/net461/System.Data.SqlClient.xml",
         "runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll",
+        "runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.xml",
         "runtimes/win/lib/netstandard1.3/System.Data.SqlClient.dll",
         "runtimes/win/lib/netstandard2.0/System.Data.SqlClient.dll",
+        "runtimes/win/lib/netstandard2.0/System.Data.SqlClient.xml",
         "runtimes/win/lib/uap10.0.16299/System.Data.SqlClient.dll",
-        "system.data.sqlclient.4.6.1.nupkg.sha512",
+        "runtimes/win/lib/uap10.0.16299/System.Data.SqlClient.xml",
+        "system.data.sqlclient.4.8.6.nupkg.sha512",
         "system.data.sqlclient.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -17976,7 +17581,7 @@
       "FsPickler.Json >= 5.3.2",
       "Microsoft.AspNet.Identity.Core >= 2.2.2",
       "Microsoft.AspNet.Identity.EntityFramework >= 2.2.2",
-      "Microsoft.AspNet.Identity.Owin >= 2.2.2",
+      "Microsoft.AspNet.Identity.Owin >= 2.2.4",
       "Microsoft.AspNet.WebApi.Core >= 5.2.7",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.CodeAnalysis.FxCopAnalyzers >= 2.9.3",
@@ -17985,10 +17590,10 @@
       "Microsoft.SqlServer.SqlManagementObjects >= 150.18147.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.10",
       "Microsoft.Win32.Registry >= 4.5.0",
-      "NHibernate >= 5.2.6",
+      "NHibernate >= 5.5.2",
       "NLog >= 4.6.7",
       "System.CodeDom >= 4.5.0",
-      "System.Data.SqlClient >= 4.6.1",
+      "System.Data.SqlClient >= 4.8.6",
       "System.DirectoryServices >= 4.5.0",
       "System.DirectoryServices.AccountManagement >= 4.5.0",
       "System.DirectoryServices.Protocols >= 4.5.0",
@@ -17998,12 +17603,12 @@
       "WindowsAzure.Storage >= 9.3.3",
       "Xamarin.Forms >= 4.5.0.617",
       "csla >= 5.5.4",
-      "dotnetnuke.core >= 7.4.1.280",
+      "dotnetnuke.core >= 10.0.1",
       "fastJSON >= 2.4.0.4",
-      "kentico.xperience.libraries >= 13.0.173",
+      "kentico.xperience.libraries >= 13.0.178",
       "log4net >= 2.0.8",
-      "microsoft.aspnetcore.app.runtime.linux-x64 >= 8.0.0",
-      "microsoft.aspnetcore.app.runtime.win-x86 >= 3.0.0",
+      "microsoft.aspnetcore.app.runtime.linux-x64 >= 8.0.10",
+      "microsoft.aspnetcore.app.runtime.win-x86 >= 8.0.7",
       "opcfoundation.netstandard.opc.ua4 >= 1.3.352.12",
       "powershell >= 7.2.18",
       "selenium.webdriver >= 4.14.1",
@@ -18085,7 +17690,7 @@
           },
           "Microsoft.AspNet.Identity.Owin": {
             "target": "Package",
-            "version": "[2.2.2, )"
+            "version": "[2.2.4, )"
           },
           "Microsoft.AspNet.WebApi.Core": {
             "target": "Package",
@@ -18122,7 +17727,7 @@
           },
           "NHibernate": {
             "target": "Package",
-            "version": "[5.2.6, )"
+            "version": "[5.5.2, )"
           },
           "NLog": {
             "target": "Package",
@@ -18134,7 +17739,7 @@
           },
           "System.Data.SqlClient": {
             "target": "Package",
-            "version": "[4.6.1, )"
+            "version": "[4.8.6, )"
           },
           "System.DirectoryServices": {
             "target": "Package",
@@ -18174,7 +17779,7 @@
           },
           "dotnetnuke.core": {
             "target": "Package",
-            "version": "[7.4.1.280, )"
+            "version": "[10.0.1, )"
           },
           "fastJSON": {
             "target": "Package",
@@ -18182,7 +17787,7 @@
           },
           "kentico.xperience.libraries": {
             "target": "Package",
-            "version": "[13.0.173, )"
+            "version": "[13.0.178, )"
           },
           "log4net": {
             "target": "Package",
@@ -18190,11 +17795,11 @@
           },
           "microsoft.aspnetcore.app.runtime.linux-x64": {
             "target": "Package",
-            "version": "[8.0.0, )"
+            "version": "[8.0.10, )"
           },
           "microsoft.aspnetcore.app.runtime.win-x86": {
             "target": "Package",
-            "version": "[3.0.0, )"
+            "version": "[8.0.7, )"
           },
           "opcfoundation.netstandard.opc.ua4": {
             "target": "Package",
@@ -18242,19 +17847,19 @@
   },
   "logs": [
     {
-      "code": "NU1101",
+      "code": "NU1102",
       "level": "Error",
-      "message": "Unable to find package opcfoundation.netstandard.opc.ua4. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, itcm_nuget, Microsoft Visual Studio Offline Packages, nuget.org",
-      "libraryId": "opcfoundation.netstandard.opc.ua4",
+      "message": "Unable to find package youtubedlsharp with version (>= 1.2.2)\r\n  - Found 19 version(s) in nuget.org [ Nearest version: 1.1.2 ]\r\n  - Found 0 version(s) in Microsoft Visual Studio Offline Packages\r\n  - Found 0 version(s) in C:\\Program Files\\dotnet\\library-packs\r\n  - Found 0 version(s) in itcm_nuget",
+      "libraryId": "youtubedlsharp",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
       ]
     },
     {
-      "code": "NU1102",
+      "code": "NU1101",
       "level": "Error",
-      "message": "Unable to find package youtubedlsharp with version (>= 1.2.2)\r\n  - Found 19 version(s) in nuget.org [ Nearest version: 1.1.2 ]\r\n  - Found 0 version(s) in Microsoft Visual Studio Offline Packages\r\n  - Found 0 version(s) in C:\\Program Files\\dotnet\\library-packs\r\n  - Found 0 version(s) in itcm_nuget",
-      "libraryId": "youtubedlsharp",
+      "message": "Unable to find package opcfoundation.netstandard.opc.ua4. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, itcm_nuget, Microsoft Visual Studio Offline Packages, nuget.org",
+      "libraryId": "opcfoundation.netstandard.opc.ua4",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
       ]
@@ -18265,146 +17870,6 @@
       "warningLevel": 1,
       "message": "Package 'Azure.Storage.Queues' 12.7.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-64x4-9hc6-r2h6",
       "libraryId": "Azure.Storage.Queues",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-3f7v-qx94-666m",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known high severity vulnerability, https://github.com/advisories/GHSA-4qf5-7xc2-wqpg",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-5c66-x4wm-rjfx",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-5whq-j5qg-wjvp",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-79m3-rvx2-3qq9",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-9phr-h5mx-4fp6",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-9w72-2f23-57gm",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known high severity vulnerability, https://github.com/advisories/GHSA-g8j6-m4p7-5rfq",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known high severity vulnerability, https://github.com/advisories/GHSA-j3g9-6fx5-gjv7",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m4hf-fxcg-cp34",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m6w9-8cxc-jff7",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-vjcm-j85r-7p68",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known high severity vulnerability, https://github.com/advisories/GHSA-x2rg-fmcv-crq5",
-      "libraryId": "DotNetNuke.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core' 7.4.1.280 has a known high severity vulnerability, https://github.com/advisories/GHSA-xx3h-j3cx-8qfj",
-      "libraryId": "DotNetNuke.Core",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
       ]
@@ -18423,17 +17888,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Identity.Owin' 2.2.2 has a known high severity vulnerability, https://github.com/advisories/GHSA-25c8-p796-jg6r",
-      "libraryId": "Microsoft.AspNet.Identity.Owin",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.App.Runtime.linux-x64' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-2865-hh9g-w894",
+      "message": "Package 'Microsoft.AspNetCore.App.Runtime.linux-x64' 8.0.10 has a known high severity vulnerability, https://github.com/advisories/GHSA-2865-hh9g-w894",
       "libraryId": "Microsoft.AspNetCore.App.Runtime.linux-x64",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18443,47 +17898,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.App.Runtime.linux-x64' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-7vw9-cfwx-9gx9",
-      "libraryId": "Microsoft.AspNetCore.App.Runtime.linux-x64",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1904",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.App.Runtime.linux-x64' 8.0.0 has a known critical severity vulnerability, https://github.com/advisories/GHSA-chfc-9w6m-75rf",
-      "libraryId": "Microsoft.AspNetCore.App.Runtime.linux-x64",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1904",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.App.Runtime.linux-x64' 8.0.0 has a known critical severity vulnerability, https://github.com/advisories/GHSA-g74q-5xw3-j7q9",
-      "libraryId": "Microsoft.AspNetCore.App.Runtime.linux-x64",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.App.Runtime.linux-x64' 8.0.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-hhc7-x9w4-cw47",
-      "libraryId": "Microsoft.AspNetCore.App.Runtime.linux-x64",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.App.Runtime.win-x86' 3.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-25c8-p796-jg6r",
+      "message": "Package 'Microsoft.AspNetCore.App.Runtime.win-x86' 8.0.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-2865-hh9g-w894",
       "libraryId": "Microsoft.AspNetCore.App.Runtime.win-x86",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18493,7 +17908,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.App.Runtime.win-x86' 3.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-3rq8-h3gj-r5c6",
+      "message": "Package 'Microsoft.AspNetCore.App.Runtime.win-x86' 8.0.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-7qrv-8f9x-3h32",
       "libraryId": "Microsoft.AspNetCore.App.Runtime.win-x86",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18503,68 +17918,8 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.App.Runtime.win-x86' 3.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-485p-mrj5-8w2v",
+      "message": "Package 'Microsoft.AspNetCore.App.Runtime.win-x86' 8.0.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-7vw9-cfwx-9gx9",
       "libraryId": "Microsoft.AspNetCore.App.Runtime.win-x86",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.App.Runtime.win-x86' 3.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-cw98-9j8w-wxv9",
-      "libraryId": "Microsoft.AspNetCore.App.Runtime.win-x86",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.App.Runtime.win-x86' 3.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-fcg8-mg9g-6hc4",
-      "libraryId": "Microsoft.AspNetCore.App.Runtime.win-x86",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1904",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.App.Runtime.win-x86' 3.0.0 has a known critical severity vulnerability, https://github.com/advisories/GHSA-g74q-5xw3-j7q9",
-      "libraryId": "Microsoft.AspNetCore.App.Runtime.win-x86",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'NHibernate' 5.2.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-fg4q-ccq8-3r5q",
-      "libraryId": "NHibernate",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Data.SqlClient' 4.6.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-8g2p-5pqh-5jmc",
-      "libraryId": "System.Data.SqlClient",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Data.SqlClient' 4.6.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-98g6-xh36-x2p7",
-      "libraryId": "System.Data.SqlClient",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
       ]
@@ -18603,8 +17958,18 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DotNetNuke.Core 7.4.1.280' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Package 'DotNetNuke.Core 10.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
       "libraryId": "DotNetNuke.Core",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'DotNetNuke.Instrumentation 10.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "DotNetNuke.Instrumentation",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
       ]
@@ -18643,7 +18008,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Identity.Owin 2.2.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Package 'Microsoft.AspNet.Identity.Owin 2.2.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.Identity.Owin",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18732,16 +18097,7 @@
     {
       "code": "NU1605",
       "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: System.Data.SqlClient from 4.8.6 to 4.6.1. Reference the package directly from the project to select a different version. \r\n dotNet-goof -> Kentico.Xperience.Libraries 13.0.173 -> System.Data.SqlClient (>= 4.8.6) \r\n dotNet-goof -> System.Data.SqlClient (>= 4.6.1)",
-      "libraryId": "System.Data.SqlClient",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: Microsoft.Win32.Registry from 4.6.0 to 4.5.0. Reference the package directly from the project to select a different version. \r\n dotNet-goof -> Kentico.Xperience.Libraries 13.0.173 -> System.Diagnostics.EventLog 4.6.0 -> Microsoft.Win32.Registry (>= 4.6.0) \r\n dotNet-goof -> Microsoft.Win32.Registry (>= 4.5.0)",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.Win32.Registry from 4.7.0 to 4.5.0. Reference the package directly from the project to select a different version. \r\n dotNet-goof -> System.Data.SqlClient 4.8.6 -> Microsoft.Win32.Registry (>= 4.7.0) \r\n dotNet-goof -> Microsoft.Win32.Registry (>= 4.5.0)",
       "libraryId": "Microsoft.Win32.Registry",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -18750,7 +18106,16 @@
     {
       "code": "NU1605",
       "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: System.Text.Encoding.CodePages from 8.0.0 to 6.0.0. Reference the package directly from the project to select a different version. \r\n dotNet-goof -> Kentico.Xperience.Libraries 13.0.173 -> MailKit 4.7.1.1 -> MimeKit 4.7.1 -> System.Text.Encoding.CodePages (>= 8.0.0) \r\n dotNet-goof -> Kentico.Xperience.Libraries 13.0.173 -> System.Text.Encoding.CodePages (>= 6.0.0)",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.AspNet.Identity.Core from 2.2.4 to 2.2.2. Reference the package directly from the project to select a different version. \r\n dotNet-goof -> Microsoft.AspNet.Identity.Owin 2.2.4 -> Microsoft.AspNet.Identity.Core (>= 2.2.4) \r\n dotNet-goof -> Microsoft.AspNet.Identity.Core (>= 2.2.2)",
+      "libraryId": "Microsoft.AspNet.Identity.Core",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: System.Text.Encoding.CodePages from 8.0.0 to 6.0.0. Reference the package directly from the project to select a different version. \r\n dotNet-goof -> Kentico.Xperience.Libraries 13.0.178 -> MailKit 4.7.1.1 -> MimeKit 4.7.1 -> System.Text.Encoding.CodePages (>= 8.0.0) \r\n dotNet-goof -> Kentico.Xperience.Libraries 13.0.178 -> System.Text.Encoding.CodePages (>= 6.0.0)",
       "libraryId": "System.Text.Encoding.CodePages",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
