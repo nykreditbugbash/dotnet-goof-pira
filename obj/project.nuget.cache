@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2Iv445tCVKU=",
+  "dgSpecHash": "OjGWB4LIvao=",
   "success": false,
   "projectFilePath": "C:\\Users\\PIRA\\code\\dotnet-goof-pira\\dotNet-goof.csproj",
   "expectedPackageFiles": [
@@ -285,24 +285,9 @@
     "C:\\Users\\PIRA\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\PIRA\\.nuget\\packages\\ude.netstandard\\1.2.0\\ude.netstandard.1.2.0.nupkg.sha512",
     "C:\\Users\\PIRA\\.nuget\\packages\\windowsazure.storage\\9.3.3\\windowsazure.storage.9.3.3.nupkg.sha512",
-    "C:\\Users\\PIRA\\.nuget\\packages\\xamarin.forms\\4.5.0.617\\xamarin.forms.4.5.0.617.nupkg.sha512",
-    "C:\\Users\\PIRA\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\PIRA\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\PIRA\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "C:\\Users\\PIRA\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+    "C:\\Users\\PIRA\\.nuget\\packages\\xamarin.forms\\4.5.0.617\\xamarin.forms.4.5.0.617.nupkg.sha512"
   ],
   "logs": [
-    {
-      "code": "NU1101",
-      "level": "Error",
-      "message": "Unable to find package opcfoundation.netstandard.opc.ua4. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, itcm_nuget, Microsoft Visual Studio Offline Packages, nuget.org",
-      "projectPath": "C:\\Users\\PIRA\\code\\dotnet-goof-pira\\dotNet-goof.csproj",
-      "filePath": "C:\\Users\\PIRA\\code\\dotnet-goof-pira\\dotNet-goof.csproj",
-      "libraryId": "opcfoundation.netstandard.opc.ua4",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
     {
       "code": "NU1102",
       "level": "Error",
@@ -310,6 +295,17 @@
       "projectPath": "C:\\Users\\PIRA\\code\\dotnet-goof-pira\\dotNet-goof.csproj",
       "filePath": "C:\\Users\\PIRA\\code\\dotnet-goof-pira\\dotNet-goof.csproj",
       "libraryId": "youtubedlsharp",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package opcfoundation.netstandard.opc.ua4. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, itcm_nuget, Microsoft Visual Studio Offline Packages, nuget.org",
+      "projectPath": "C:\\Users\\PIRA\\code\\dotnet-goof-pira\\dotNet-goof.csproj",
+      "filePath": "C:\\Users\\PIRA\\code\\dotnet-goof-pira\\dotNet-goof.csproj",
+      "libraryId": "opcfoundation.netstandard.opc.ua4",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
       ]
