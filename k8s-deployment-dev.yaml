@@ -49,6 +49,10 @@ spec:
               port: http
           resources:
             {}
+          securityContext:
+            capabilities:
+              drop:
+                - ALL
         - name: snyky2
           image: "garethr/snyky2:latest"
           imagePullPolicy: IfNotPresent
